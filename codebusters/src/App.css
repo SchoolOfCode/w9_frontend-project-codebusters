@@ -61,3 +61,16 @@ position:auto;
     transform: rotate(360deg);
   }
 }
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper>div {
+  margin: 20px;
+}
