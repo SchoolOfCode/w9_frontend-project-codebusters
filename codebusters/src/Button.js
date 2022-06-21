@@ -1,9 +1,9 @@
 import React from "react";
-import "./Buttons.css";
+import "./Button.css";
 
 
 
-const Buttons = ({ label }) => {
+const Button = ({ label }) => {
     return (
 <div class='wrapper'>
 
@@ -64,4 +64,4 @@ const Buttons = ({ label }) => {
     )}
 
 
-export default Buttons;
+export default Button;

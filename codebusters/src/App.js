@@ -3,7 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import ToggleSwitch from './ToggleSwitch.js';
 import index from './index.js';
-import Buttons from './Buttons.js';
+import Button from './Button.js';
+import Databox from "./Databox.js";
+import * as Scroll from 'react-scroll';
+
 
 
 
@@ -11,6 +14,7 @@ import Buttons from './Buttons.js';
 function App() {
 
   return (
+    
     <><div className="App">
       
       <header className="App-header">
@@ -24,7 +28,14 @@ function App() {
 
       <>
        <ToggleSwitch label="Dark mode" />
-       <Buttons />
+
+
+       <Button  onClick = {()=>{setData("vscode")}}>VS CODE</Button>
+       <Button  onClick = {()=>{setData("npm")}}>NPM</Button>
+       <Button  onClick = {()=>{setData("github")}}>Github</Button>
+
+       
+       {/*<Databox>{displayData && displayData.data  etc etc}</Databox>*/}
 
 
 
