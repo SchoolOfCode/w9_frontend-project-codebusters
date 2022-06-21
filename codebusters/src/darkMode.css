@@ -1,0 +1,65 @@
+#background{
+    background-color: #8c9d9d;
+    background-image: url("lightMode.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+  }
+
+  [data-theme='dark']{
+    background-color: #050606;
+    background-image: url("bartek-garbowicz-xJeCLqsBUqc-unsplash.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+  }
+  
+  .App-header{
+  position:auto;
+  
+  }
+  
+  #mainTitle{
+    
+     display:inline;
+     position:relative; top: 20px;
+     padding-left:500px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif ;
+     font-size:75px;
+     letter-spacing: 10px;
+     color: rgb(0, 187, 255);
+     
+    
+  }
+  
+  #mainTitle:after{
+    
+    content:"[Error]";
+    position:absolute;left:496px;top:11px;
+    color: rgba(255, 183, 0, 0.819);
+    
+  }
+  
+  .App-logo {
+    position:absolute;left:470px; top:200px;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
