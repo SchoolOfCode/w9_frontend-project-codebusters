@@ -17,7 +17,7 @@ useEffect(()=> {
     //this needs the local host url from the backend server
     const response = await fetch("https://    ")
     const dataFetch = await response.json();
-    setData(dataFetch.data);
+    setData(dataFetch.data); // unsure about the .data at the end???
   }
   errorMsg();
 }, [])
