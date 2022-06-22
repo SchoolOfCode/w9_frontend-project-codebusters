@@ -9,22 +9,16 @@ import Databox from "./Databox.js";
 import * as Scroll from 'react-scroll';
 
 
-
-
-
 function App() {
   const [data, setData]=useState([])
 
-useEffect(()=> {
-  async function npmErrorMsg() {
+  async function npmErrorMsg(topicType) {
     //this needs the local host url from the backend server
-    const response = await fetch("http://localhost:3001/movies")
+    const response = await fetch(`http://localhost:3001/movies`)
     const dataFetch = await response.json();
     setData(dataFetch.payload);
-    console.log("UseEffect here")
+    console.log(data)
   }
-  npmErrorMsg();
-}, [])
 
 
 const payload = data.map(payload =>
@@ -45,7 +39,6 @@ const payload = data.map(payload =>
       
       
           </div> <img src={logo} className="App-logo" alt="logo" />
-
       <>
        <ToggleSwitch label="Dark mode" />
 
@@ -53,23 +46,15 @@ const payload = data.map(payload =>
         {payload}
         </div>
 
-       <Button  onClick = {()=>{setData("vscode")}}>VS CODE</Button>
-       <Button  onClick = {()=>{setData("npm")}}>NPM</Button>
-       <Button  onClick = {()=>{setData("github")}}>Github</Button>
-
-       
-       {/*<Databox>{displayData && displayData.data  etc etc}</Databox>*/}
-
-
-
-
-
-
+        <div className ='wrapper'>
+       <Button  label="VS CODE" topicType= "VS" onClick={npmErrorMsg} />
+       <Button  label="NPM" topicType="npm" styleType="in" onClick={npmErrorMsg} />
+       <Button  label="GITHUB" topicType="Git" onClick={npmErrorMsg} />
+       </div>
        </>
        
         
      
     </>);
 };
-
 export default App;
