@@ -13,7 +13,7 @@ function App() {
 
   async function npmErrorMsg(topicType) {
     //this needs the local host url from the backend server
-    const response = await fetch(`http://localhost:3001/movies/${topicType}`);
+    const response = await fetch(`http://localhost:3001/errors/${topicType}`);
     const dataFetch = await response.json();
     setData(dataFetch.payload);
     console.log(data);
