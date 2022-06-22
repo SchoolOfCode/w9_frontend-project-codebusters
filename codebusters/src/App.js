@@ -1,6 +1,7 @@
 import React from "react";
 import {useState} from "react";
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './food.jpg';
 import './App.css';
 import ToggleSwitch from './ToggleSwitch.js';
 import index from './index.js';
@@ -13,7 +14,7 @@ function App() {
 
   async function npmErrorMsg(topicType) {
     //this needs the local host url from the backend server
-    const response = await fetch(`http://localhost:3001/movies`)
+    const response = await fetch(`http://localhost:3001/movies/${topicType}`)
     const dataFetch = await response.json();
     setData(dataFetch.payload);
     console.log(data)
@@ -21,7 +22,7 @@ function App() {
 
 
 const payload = data.map(payload =>
-      <div>{payload.topic}</div>
+      <div>{payload.question}</div>
       )
       console.log(payload)
 
@@ -37,6 +38,7 @@ const payload = data.map(payload =>
       
       
       
+          {/* </div> <img src={logo} className="App-logo" alt="logo" /> */}
           </div> <img src={logo} className="App-logo" alt="logo" />
       <>
        <ToggleSwitch label="Dark mode" />
