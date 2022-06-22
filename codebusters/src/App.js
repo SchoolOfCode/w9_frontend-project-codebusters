@@ -32,6 +32,11 @@ const payload = data.map(payload =>
       )
       console.log(payload)
 
+// buttonLabel is known as label in Button.js component
+function HandleClick(buttonLabel){
+alert(buttonLabel)
+}
+
 
   return (
     
@@ -52,11 +57,13 @@ const payload = data.map(payload =>
         <div className="drinksdata">
         {payload}
         </div>
+       
+       <div className='wrapper'>
 
-       <Button  onClick = {()=>{setData("vscode")}}>VS CODE</Button>
-       <Button  onClick = {()=>{setData("npm")}}>NPM</Button>
-       <Button  onClick = {()=>{setData("github")}}>Github</Button>
-
+       <Button  label="VS CODE" onClick={HandleClick} />
+       <Button  label="NPM" styleType="in" onClick={HandleClick} />
+       <Button  label="GITHUB" onClick={HandleClick} />
+      </div>
        
        {/*<Databox>{displayData && displayData.data  etc etc}</Databox>*/}
 
