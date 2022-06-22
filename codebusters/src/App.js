@@ -1,12 +1,11 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import logo from './logo.svg';
 import './App.css';
 import ToggleSwitch from './ToggleSwitch.js';
 import index from './index.js';
 import Button from './Button.js';
 import Databox from "./Databox.js";
-import * as Scroll from 'react-scroll';
 
 
 function App() {
