@@ -3,7 +3,7 @@ import "./Button.css";
 
 
 
-const Button = ({ label, styleType, onClick }) => {
+const Button = ({ label, topicType, styleType, onClick }) => {
 
 const buttonClasses = (styleType === 'in') ? "bttn in" : "bttn out cyan"
 
@@ -11,8 +11,8 @@ const buttonClasses = (styleType === 'in') ? "bttn in" : "bttn out cyan"
 //This child component will know the HandleClick function as onClick in here, as it is passed in as a prop called onClick(Line 6).
     return (
 <>
-
-  <div onClick={()=>onClick(label)} className={buttonClasses}>
+{/*topicType i.e topic is what you want to call from backend*/}
+  <div onClick={()=>onClick(topicType)} className={buttonClasses}>
     <span>{label}</span>
     <div className='corners top'></div>
     <div className='corners bottom'></div>

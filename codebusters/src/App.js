@@ -19,8 +19,9 @@ useEffect(()=> {
   async function npmErrorMsg() {
     //this needs the local host url from the backend server
     const response = await fetch("http://localhost:3001/movies")
+    //const response = await fetch("http://localhost:3001/movies?type=all")
     const dataFetch = await response.json();
-    setData(dataFetch.payload);
+    //setData(dataFetch.payload);
     console.log("UseEffect here")
   }
   npmErrorMsg();
@@ -30,12 +31,24 @@ useEffect(()=> {
 const payload = data.map(payload =>
       <div>{payload.topic}</div>
       )
-      console.log(payload)
+console.log(payload + "Hello")
+
 
 // buttonLabel is known as label in Button.js component
-function HandleClick(buttonLabel){
+async function HandleClick(buttonLabel){
 alert(buttonLabel)
+// agree on error type endpoint //////need to work on this 
+const response = await fetch("http://localhost:3001/movies")
+//const response = await fetch(`http://localhost:3001/errors/${topicType}`)
+const dataFetch = await response.json();
+setData(dataFetch.payload);
+console.log("Handleclick function here")
 }
+
+const buttonPayload = data.map(payload =>
+      <div>{payload.question}</div>
+      )
+console.log(buttonPayload + "payload button")
 
 
   return (
@@ -54,28 +67,26 @@ alert(buttonLabel)
       <>
        <ToggleSwitch label="Dark mode" />
 
-        <div className="drinksdata">
+        {/*<div className="errorsdata">
         {payload}
-        </div>
+        </div>*/}
+
+      <div className="errorsdata">
+        {buttonPayload}
+      </div>
        
        <div className='wrapper'>
 
-       <Button  label="VS CODE" onClick={HandleClick} />
-       <Button  label="NPM" styleType="in" onClick={HandleClick} />
-       <Button  label="GITHUB" onClick={HandleClick} />
+       <Button  label="VS CODE" topicType= "VS" onClick={HandleClick} />
+       <Button  label="NPM" topicType="npm" styleType="in" onClick={HandleClick} />
+       <Button  label="GITHUB" topicType="Git" onClick={HandleClick} />
+       /clarify topic////////////
       </div>
        
        {/*<Databox>{displayData && displayData.data  etc etc}</Databox>*/}
 
-
-
-
-
-
        </>
-       
-        
-     
+          
     </>);
 };
 
