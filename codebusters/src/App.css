@@ -56,7 +56,7 @@ position:absolute;
 
 #mainTitle:after{
   
-  content:"[Error]";
+  content:"[Error Oracle]";
   position:absolute;left:496.5px;top:4.5px;
   color: rgba(255, 183, 0, 0.819);
   

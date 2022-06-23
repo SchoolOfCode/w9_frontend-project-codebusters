@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
  import logo from './Chris.png';
-import lizk from "./LizK.png";
+import lizk from "./LizK.png";//
 import "./App.css";
 
 import index from "./index.js";
