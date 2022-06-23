@@ -12,6 +12,7 @@ import DarkMode from "./DarkMode.js";
  
 function App() {
   const [data, setData] = useState([]);
+  const[searchTerm, setSearchTerm]=useState([]);
 
   async function npmErrorMsg(topicType) {
     //this needs the local host url from the backend server
