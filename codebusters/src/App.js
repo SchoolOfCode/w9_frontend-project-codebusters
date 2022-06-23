@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
  import logo from './Chris.png';
-import lizk from "./LizK.png";//
+import lizk from "./LizK.png";
 import "./App.css";
 
 import index from "./index.js";
@@ -14,42 +14,39 @@ import Input from "./Input";
 function App() {
   const [data, setData] = useState([]);
   const [text, setText] = useState("");
-  // const [text, setText] = useState("");
-
-
-  async function npmErrorMsg(topicType) {
-    //this needs the local host url from the backend server
-    const response = await fetch(`http://localhost:3001/errors/${topicType}`);
-    const dataFetch = await response.json();
-    setData(dataFetch.payload);
-    console.log(data);
-  }
-
-  let allErrors;
+  const [allData, setAllData] = useState("");
 
   async function getAllErrors() {
     //this needs the local host url from the backend server
     const response = await fetch(`http://localhost:3001/errors`);
     const dataFetch = await response.json();
-    console.log(dataFetch)
+    // console.log(dataFetch)
     // allErrors = dataFetch.payload
-    setData(dataFetch.payload)
+    setAllData(dataFetch.payload)
     // setData(dataFetch.payload);
     // setData(dataFetch.filter(element => element.includes(text)))
   }
 
 useEffect(() => {
   getAllErrors();
-}, [])
+}, []);
+
+  async function npmErrorMsg(topicType) {
+    //this needs the local host url from the backend server
+    const response = await fetch(`http://localhost:3001/errors/${topicType}`);
+    const dataFetch = await response.json();
+    setData(dataFetch.payload);
+    // console.log(data);
+  }
 
 
 function clickMeToGetError(){
-  console.log(data);
-  let filteredOutObject = data.filter((obj) => {
+  // console.log(data);
+  let filteredOutObject = allData.filter((obj) => {
     // console.log(obj)
     return obj.question.includes(text)
   })
-  console.log(filteredOutObject)
+  // console.log(filteredOutObject)
   setData(filteredOutObject)
   // setData(allErrors.filter(element => Object.values(element).includes(`${text}`)))
 
