@@ -40,10 +40,11 @@ function App() {
         {/* </div> <img src={logo} className="App-logo" alt="logo" /> */}
       </div>{" "}
       <img src={logo} className="App-logo" alt="logo" />
+      
       <>
        
 
-        <div className="drinksdata">{payload}</div>
+        
 
         <div className="wrapper">
           <Button label="VS CODE" topicType="VS" onClick={npmErrorMsg} />
