@@ -30,6 +30,12 @@ function App() {
   ));
   console.log(payload);
 
+
+   function inputSearch(newSearch) {
+   setSearchTerm(newSearch)
+   console.log(searchTerm)
+  }
+
   return (
     <>
       <div className="App">
