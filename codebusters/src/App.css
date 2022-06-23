@@ -1,21 +1,36 @@
-#background{
-  background-color: #050606;
-  background-image: url("bartek-garbowicz-xJeCLqsBUqc-unsplash.jpg"); 
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  
-  
+html{
+  overflow: scroll;
 }
 
-.drinksdata {
-  color: white
+
+.dataText{
+  position:relative;
+  color:#fff;
+  font-size: 2rem;
+  width: 1000px;
+    height:1000px;
+    border: none;
+    padding:50px;
+    margin: 20px;
+    color:#fff;
+    
+}
+
+.dataText::before{
+  content: "";
+  position: absolute;
+  color:#fff;
+  top: 0;
+  left: 100px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 
 
 .App-header{
-position:auto;
+position:absolute;
 
 }
 
@@ -32,25 +47,39 @@ position:auto;
   
 }
 
+#spotify{
+  float:right;
+  top:-20px;
+  
+
+}
+
 #mainTitle:after{
   
   content:"[Error]";
-  position:absolute;left:496px;top:11px;
+  position:absolute;left:496.5px;top:4.5px;
   color: rgba(255, 183, 0, 0.819);
   
 }
 
+
+
 .App-logo {
-  position:absolute;left:470px; top:200px;
-  height: 40vmin;
+  position:absolute;bottom: 500px; left: 20px;
+  height: 20vmin;
+  margin-left: 120px;
+
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
+    
   }
 }
+
+
 
 
 @keyframes App-logo-spin {
