@@ -51,7 +51,7 @@ function App() {
       <>
        
 
-        
+      <Input inputSearch={inputSearch}/>
 
         <div className="wrapper">
           <Button label="VS CODE" topicType="VS" onClick={npmErrorMsg} />
