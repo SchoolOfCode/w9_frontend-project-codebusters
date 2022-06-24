@@ -47,6 +47,20 @@ body{
     border: 1px solid rgb(0, 187, 255);
 }
 
+[data-theme="dark"] .searchButton{
+  position: relative;left:380px;bottom:130px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color:#dde4e7;
+  width: 100px;
+    height:35px;
+    background-color: #ffbb0030;
+    border: 1px solid rgb(101, 135, 135);
+    outline: 0;
+    cursor: pointer;
+}
+
+
 [data-theme="dark"] .answer{
   font-size: 1.2rem;
   color:rgb(255, 255, 255);

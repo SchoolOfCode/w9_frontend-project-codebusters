@@ -30,6 +30,19 @@ html{
 
 }
 
+.searchButton{
+  position: relative;left:380px;bottom:130px;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100px;
+    height:35px;
+    background-color: #eb0e0e30;
+    border: 1px solid rgb(101, 135, 135);
+    outline: 0;
+    cursor: pointer;
+
+}
+
 .textArea{
   position: relative;left:230px;bottom:400px;
   border-radius: 10px;
