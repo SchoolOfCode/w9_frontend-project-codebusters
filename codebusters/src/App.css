@@ -18,7 +18,7 @@ html{
 }
 
 .searchBox{
-  position: relative;left:380px;bottom:130px;
+  position: relative;left:330px;bottom:130px;
   border-radius: 10px;
   font-size: 1rem;
   width: 500px;
@@ -31,7 +31,7 @@ html{
 }
 
 .searchButton{
-  position: relative;left:380px;bottom:130px;
+  position: relative;left:330px;bottom:130px;
   border-radius: 10px;
   font-size: 1rem;
   width: 100px;
@@ -74,7 +74,7 @@ font-size: 1.5rem;
 #mainTitle{
   
   justify-content: center;
-  position: relative;left:340px;top:40px;
+  position: relative;left:344px;top:40px;
    font-family: Verdana, Geneva, Tahoma, sans-serif ;
    font-size:55px;
    letter-spacing: 10px;
