@@ -1,6 +1,3 @@
-/* Change darkMode to DarkMode */
-/*change lightMode to LightMode//*/
-
 
 :root{
     --background-color:	#cdd3d5;
@@ -11,137 +8,82 @@
 }
 
 [data-theme="dark"]{
-   
     --background-color: #050606;
     --background-image: url("DarkMode.jpg"); 
-    --background-repeat: no-repeat;
-    --background-attachment: scroll;
-    --background-size: cover;
     --color:rgb(160, 98, 218);
 
-
-    
 }
-
 
 body{
-    background-color: var(--background-color);
-    color: var(--color);
-    background-image: var(--background-image);
-    background-repeat: var(--background-repeat);
-    background-attachment: var(--background-attachment);
-    background-size: var(--background-size);
-   
-
-    
+  background-color: var(--background-color);
+  color: var(--color);
+  background-image: var(--background-image);
+  background-repeat: var(--background-repeat);
+  background-attachment: var(--background-attachment);
+  background-size: var(--background-size);
 }
 
-
 [data-theme="dark"] .searchBox{
-  position: relative;left:330px;bottom:130px;
-  border-radius: 10px;
-  font-size: 1rem;
-  width: 500px;
-    height:35px;
-    background-color: #ffbb0030;
-    border: 1px solid rgb(0, 187, 255);
-    color:#dde4e7;
+background-color: #ffbb0030;
+border: 1px solid rgb(0, 187, 255);
+color:#dde4e7;
 }
 
 [data-theme="dark"] .searchButton{
-  position: relative;left:330px;bottom:130px;
-  border-radius: 10px;
-  font-size: 1rem;
-  color:#dde4e7;
-  width: 100px;
-    height:35px;
-    background-color: #ffbb0030;
-    border: 1px solid rgb(101, 135, 135);
-    outline: 0;
-    cursor: pointer;
+color:#dde4e7;
+background-color: #ffbb0030;
+border: 1px solid rgb(101, 135, 135);
 }
-
 
 [data-theme="dark"] .answer{
-  font-size: 1.2rem;
-  color:rgb(255, 255, 255);
+color:rgb(255, 255, 255);
 }
 
-
 [data-theme="dark"] .dataText{
-  background-color: rgba(0, 0, 0, 0.4);
-  position:relative; left:110px;
-  font-size: 2rem;
-  width: 1000px;
-    height:2000px;
-    border: none;
-    padding:50px;
-    margin: 20px;
-    margin-bottom: 130px;
+background-color: rgba(0, 0, 0, 0.4);
 }
 
 [data-theme="dark"] #mainTitle{
-  
-  justify-content: center;
-  position: relative;left:340px;top:40px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif ;
-   font-size:55px;
-   letter-spacing: 10px;
-   color: rgb(0, 187, 255);
-
+color: rgb(0, 187, 255);
 }
 
 [data-theme="dark"] .textArea{
-  position: relative;left:230px;bottom:400px;
-  border-radius: 10px;
-  font-size: 1rem;
-  width: 800px;
-    height:100px;
-    background-color: #ffbb0030;
-    border: 1px solid grey;
-    outline: 0;
-    cursor: text;
-
+  background-color: #ffbb0030;
+  border: 1px solid grey; 
 }
-
 
 [data-theme="dark"] #mainTitle::after{
   content:"[Error Oracle]";
-  position: relative;right:609px;top:2px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
-  font-size:55px;
-  letter-spacing: 10px;
   color: rgb(255, 187, 0);
-  
 }
 
+[data-theme="dark"] #creators{
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-
-
-
+/*toggle*/
 .toggle-theme-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
-    position: absolute; top: 5px; left: 1150px;
-    
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  position: absolute; top: 5px; left: 1150px;
+}
   
-  .toggle-theme-wrapper span {
-    font-size: 28px;
-  }
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
   
-  .toggle-theme {
-    position: relative;
-    display: inline-block;
-    height: 34px;
-    width: 60px;
-  }
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+}
   
-  .toggle-theme input {
-    display: none;
-  }
+.toggle-theme input {
+  display: none;
+}
   
   .slider {
     background-color: #ccc;
@@ -167,11 +109,11 @@ body{
   
   input:checked + .slider:before {
     transform: translateX(26px);
-  }
+}
   
   input:checked + .slider {
-    background-color: rgb(100, 210, 237);
-  }
+  background-color: rgb(100, 210, 237);
+}
   
   .slider.round {
     border-radius: 34px;
@@ -181,90 +123,64 @@ body{
     border-radius: 50%;
   }
 
+  /*toggle end*/
+
+
+
+  /* Head images*/
+
+
   .App-logo {
-  
     height: 20vmin;
     position: relative;bottom: 90px;left:90px;
     pointer-events: none;
   }
   
-  @media (prefers-reduced-motion: no-preference) {
-    [data-theme="dark"] .App-logo {
-      animation: App-logo-spin infinite 10s linear;
-      
-    }
-  }
+@media (prefers-reduced-motion: no-preference) {
+  [data-theme="dark"] .App-logo {animation: App-logo-spin infinite 10s linear;}
+}
   
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+@keyframes App-logo-spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
   
-  .lizk {
+.lizk {
   float: right;
   position: relative;bottom: 80px; right:70px;
-    height: 25vmin;
-    pointer-events: none;
-  }
+  height: 25vmin;
+  pointer-events: none;
+}
   
-  @media (prefers-reduced-motion: no-preference) {
-    [data-theme="dark"] .lizk {
-      animation: lizk-spin infinite 10s linear;
-      
-    }
-  }
+@media (prefers-reduced-motion: no-preference) {
+  [data-theme="dark"] .lizk {animation: lizk-spin infinite 10s linear;}
+}
   
-  
-  
-  
-  @keyframes lizk-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+@keyframes lizk-spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
 
+
+/* Head images end*/
+
+
+/* Buttons */
 
   [data-theme="dark"] .bttn.cyan span {
-    color: cyan;
+  color: cyan;
   }
-
 
   [data-theme="dark"] .bttn span {
-    display: block;
-    padding: 30px;
-    font-size: 30px;
-    color: #FFB902;
-    text-transform: uppercase;
+  color: #FFB902; 
   }
 
-
   [data-theme="dark"] .bttn.in .corners:before, [data-theme="dark"] .bttn.in .corners:after {
-    content: '';
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-color: #FFB902;
-    border-style: solid;
-    transition-duration: 0.3s;
-    transform: translateZ(0);
+  border-color: #FFB902;
   }
 
   [data-theme="dark"] .box.out .corners:before, [data-theme="dark"] .box.out .corners:after {
-    content: '';
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-color: cyan;
-    border-style: solid;
-    transition-duration: 0.3s;
-    transform: translateZ(0);
+  border-color: cyan;
   }
 
   [data-theme="dark"] .box.out .content {
@@ -272,70 +188,35 @@ body{
     color: cyan;
   }
 
-
   [data-theme="dark"] .box.in .corners:before, [data-theme="dark"] .box.in .corners:after {
-    content: '';
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-color: #FFB902;
-    border-style: solid;
-    transition-duration: 0.3s;
-    transform: translateZ(0);
-
+  border-color: #FFB902; 
   }
 
   [data-theme="dark"] .bttn.cyan .corners:after, [data-theme="dark"] .bttn.cyan .corners:before {
     border-color: cyan;
   }
 
-
-
   [data-theme="dark"] .box.in .content {
     border-color: rgba(255, 185, 2, 0.5);
     color: #FFB902;
-
   }
+  /*Buttons end*/
 
 
-  [data-theme="dark"] a:link {
+/* Resources */
+[data-theme="dark"] a:link {
   color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: underline;
 }
 
 [data-theme="dark"] a:visited {
   color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: underline;
 }
 
+[data-theme="dark"] a:hover {
+  color:cyan;
+}
 
-  [data-theme="dark"] a:hover {
-    color:cyan;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-
-
-  [data-theme="dark"] #useful{
-    position:relative; left:150px; bottom:1025px;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 250px;
-    height:320px;
-    padding:70px;
-    border-radius: 20px;
-    
-  }
-
-  [data-theme="dark"] #creators{
-    position:relative; left:880px; bottom:350px;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 250px;
-    height:320px;
-    padding:70px;
-    border-radius: 20px;
-    font-size: 16px;
-  
-  }
+[data-theme="dark"] #useful{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+  /* Resources end */

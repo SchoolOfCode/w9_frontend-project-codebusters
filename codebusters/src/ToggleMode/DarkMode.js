@@ -1,4 +1,3 @@
-//update the photo name to capital 
 import "./DarkMode.css";
 
 
