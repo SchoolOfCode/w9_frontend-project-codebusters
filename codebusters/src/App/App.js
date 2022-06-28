@@ -1,7 +1,6 @@
-import React from "react";
 import { useState, useEffect } from "react";
- import logo from '../Images/Chris.png';
-import lizk from "../Images/LizK.png";//
+import logo from '../Images/Chris.png';
+import lizk from "../Images/LizK.png";
 import "./App.css";
 import Button from "../Button/Button.js";
 import DarkMode from "../ToggleMode/DarkMode.js";
@@ -42,32 +41,18 @@ useEffect(() => {
     setData(filteredOutObject)
   }
   
-
-  
-    function userInput(userInput){
+  function userInput(userInput){
       setText(userInput)
     }
   
 
   return (
      <>
-      <h1 id = "mainTitle" >[Error Oracle]</h1>
+      <h1 id = "mainTitle" > [Error Oracle] </h1>
       <img src={logo} className="App-logo" alt="logo" />
       <img src={lizk} className="lizk" alt="logo" />
-      {/*<div className="App">*/}
-        {/*<header className="App-header">*/}
-
-
-         {/*<header>
-          <div className="groupTitle"></div>
-        </header>*/}
-
-      {/*
-      </div>{" "}*/}
-      
     <>
        
-
     <div className="wrapper">
       <Button 
       label="VS CODE" 
@@ -93,13 +78,9 @@ useEffect(() => {
     text={text} 
     userInput={userInput} 
     getAllErrors = {getAllErrors}
+    clickToGetErrorByInput = {clickToGetErrorByInput}
     />
-        
-    <button 
-    className="searchButton" 
-    onClick = {clickToGetErrorByInput}>Search</button>
        
-
     <p 
     className ="dataText">{
     data.map((payload) => {

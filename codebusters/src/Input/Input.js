@@ -1,5 +1,6 @@
-function Input({ text, userInput }) {
+function Input({ text, userInput, clickToGetErrorByInput }) {
   return (
+    <>
         <input
         value={text}
         className = "searchBox"
@@ -9,6 +10,9 @@ function Input({ text, userInput }) {
           userInput(e.target.value);
         }} >
         </input>
+
+        <button onClick = {clickToGetErrorByInput} className="searchButton">Search</button>
+    </>
 
   );
 }
