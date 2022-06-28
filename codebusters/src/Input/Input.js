@@ -1,4 +1,4 @@
-function Input({ text, handleChange }) {
+function Input({ text, userInput }) {
   return (
         <input
         value={text}
@@ -6,8 +6,9 @@ function Input({ text, handleChange }) {
         type = "text"
         placeholder="Ask the Oracle"
         onChange={(e) => {
-          handleChange(e.target.value);
-        }} ></input>
+          userInput(e.target.value);
+        }} >
+        </input>
 
   );
 }
