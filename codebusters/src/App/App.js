@@ -2,10 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
  import logo from '../Images/Chris.png';
 import lizk from "../Images/LizK.png";//
-import "../Style/App.css";
+import "./App.css";
 import Button from "../Button/Button.js";
 import DarkMode from "../ToggleMode/DarkMode.js";
-import Input from "../Input";
+import Input from "../Input/Input.js";
 
 
  
