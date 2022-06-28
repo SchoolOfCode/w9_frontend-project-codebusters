@@ -1,5 +1,3 @@
-
-import React from "react";
 import "./Button.css";
 
 const Button = ({ label, topicType, styleType, onClick }) => {
@@ -16,5 +14,7 @@ const Button = ({ label, topicType, styleType, onClick }) => {
   </>
 
       )}
+
+      
 
 export default Button;

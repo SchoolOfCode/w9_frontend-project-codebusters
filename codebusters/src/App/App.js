@@ -32,7 +32,7 @@ useEffect(() => {
     console.log(data);
   }
 
-  function clickToGetErrorByType(){
+  function clickToGetErrorByInput(){
     // console.log(data);
     let filteredOutObject = allData.filter((obj) => {
       // console.log(obj)
@@ -50,10 +50,10 @@ useEffect(() => {
   
 
   return (
-  <>
-  <h1 id = "mainTitle" >[Error Oracle]</h1>
-  <img src={logo} className="App-logo" alt="logo" />
-  <img src={lizk} className="lizk" alt="logo" />
+     <>
+      <h1 id = "mainTitle" >[Error Oracle]</h1>
+      <img src={logo} className="App-logo" alt="logo" />
+      <img src={lizk} className="lizk" alt="logo" />
       {/*<div className="App">*/}
         {/*<header className="App-header">*/}
 
@@ -65,57 +65,57 @@ useEffect(() => {
       {/*
       </div>{" "}*/}
       
-  <>
+    <>
        
 
-  <div className="wrapper">
-  <Button 
-  label="VS CODE" 
-  topicType="VS" 
-  onClick={fetchErrorByTopicType} 
-  />
+    <div className="wrapper">
+      <Button 
+      label="VS CODE" 
+      topicType="VS" 
+      onClick={fetchErrorByTopicType} 
+      />
 
-  <Button
-  label="NPM"
-  topicType="npm"
-  styleType="in"
-  onClick={fetchErrorByTopicType}
-  />
+      <Button
+      label="NPM"
+      topicType="npm"
+      styleType="in"
+      onClick={fetchErrorByTopicType}
+      />
 
-  <Button 
-         label="GIT" 
-          topicType="Git" 
-          onClick={fetchErrorByTopicType} 
-          />
-        </div>
+      <Button 
+      label="GIT" 
+      topicType="Git" 
+      onClick={fetchErrorByTopicType} 
+       />
+    </div>
 
-        <Input 
-        text={text} 
-        userInput={userInput} 
-        getAllErrors = {getAllErrors}
-        />
+    <Input 
+    text={text} 
+    userInput={userInput} 
+    getAllErrors = {getAllErrors}
+    />
         
-        <button 
-        className="searchButton" 
-        onClick = {clickToGetErrorByType}>Search</button>
+    <button 
+    className="searchButton" 
+    onClick = {clickToGetErrorByInput}>Search</button>
        
 
-        <p 
-        className ="dataText">{
-        data.map((payload) => {
-          return <div>
-          <div className="question">{payload.question}</div> <br></br>
-          <div className="answer">{payload.answer}</div><br></br>
-          </div>
-        })}
-        </p>
+    <p 
+    className ="dataText">{
+    data.map((payload) => {
+       return <div>
+         <div className="question">{payload.question}</div> <br></br>
+         <div className="answer">{payload.answer}</div><br></br>
+         </div>
+    })}
+    </p>
         
-        <DarkMode id= 'toggle'/>
+    <DarkMode id= 'toggle'/>
 
-        <textarea 
-        className = "textArea" 
-        placeholder="Comments"
-        />
+    <textarea 
+    className = "textArea" 
+    placeholder="Comments"
+    />
       </>
     </>
   );
