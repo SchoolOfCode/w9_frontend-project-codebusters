@@ -35,7 +35,7 @@ html{
 }
 
 .searchBox{
-  position: relative;left:330px;bottom:130px;
+  position: relative;left:330px;bottom:120px;
   border-radius: 10px;
   font-size: 1rem;
   width: 500px;
@@ -48,7 +48,7 @@ html{
 }
 
 .searchButton{
-  position: relative;left:330px;bottom:130px;
+  position: relative;left:330px;bottom:120px;
   border-radius: 10px;
   font-size: 1rem;
   width: 100px;
@@ -62,15 +62,17 @@ html{
 
 .dataText{ /* Text in the display section */
   background-color: rgba(114, 110, 110, 0.4);
-  position:relative; left:110px;bottom:140px;
+  position:relative; bottom: 120px;
   border-radius: 20px;
   font-size: 2rem;
   width: 1000px;
     height:2000px;
     border: none;
-    padding:50px;
-    margin: 20px;
-    margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  
+   
 }
 
 .question{
@@ -86,7 +88,7 @@ html{
   /* Text in the display section end*/
 
 .textArea{ /*comment section*/
-  position: relative;left:230px;bottom:400px;
+  position: absolute;left:230px; bottom: -1600px;
   border-radius: 10px;
   font-size: 1rem;
   width: 800px;
@@ -99,11 +101,11 @@ html{
 
 
 #useful{ /*useful links box*/
-  position:relative; left:130px; bottom:1025px;
+  position:relative; left:133px; bottom:980px;
   background-color: rgba(114, 110, 110, 0.4);
-  width: 250px;
+  width: 200px;
   height:320px;
-  padding:70px;
+  padding: 50px;
   border-radius: 20px;
 }
 
@@ -128,20 +130,15 @@ a:hover {
 /*useful links box end*/
 
 #spotify{
-  position:relative; left:440px;bottom: 685px; 
+  position:relative; left:475px;bottom: 550px; 
 }
 
 #creators{ /*creators box*/
-  position:relative; left:880px; bottom:350px;
+  position:relative; left:833px; bottom:130px;
   background-color: rgba(114, 110, 110, 0.4);
-  width: 250px;
+  background-color: rgba(114, 110, 110, 0.4);
+  width: 200px;
   height:320px;
-  padding:70px;
+  padding: 50px;
   border-radius: 20px;
-  font-size: 16px;
 }
-
-
-
-
-
