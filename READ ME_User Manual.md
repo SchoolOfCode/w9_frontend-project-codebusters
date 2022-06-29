@@ -43,6 +43,11 @@ If you would like to share your thoughts, comments or code snippets with other u
 **_Unfortunately this option is still under a development._**
 ![ERROR ORACLE_light mode - comment](https://user-images.githubusercontent.com/101604946/176458178-f87023e8-f739-4a66-98a2-b19f1f2e2623.png)
 
+# Useful Links
+
+In case if another source of information is needed to expand your knowledge. We are providing you with extra links in **Links** section.
+![ERROR ORACLE_light mode - links](https://user-images.githubusercontent.com/101604946/176463490-bd6916c0-8b57-4b6a-b08b-219d8ce44cda.png)
+
 # Music Player
 
 In case you got frustrated by errors you can relax yourself by listening awesome playlist about coding. Thanks gods for Spotify!
