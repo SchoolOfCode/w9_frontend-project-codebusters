@@ -3,8 +3,8 @@ import Button from './Button';
 
 const mockfunction = jest.fn()
 
-test("button clicks when onClick is called",() =>{
+test("button rendered sucessfully",() =>{
 render(<Button label={'npm'} topicType={mockfunction}/>);
-  const linkElement = screen.getByText('npm');
-  expect(linkElement).toBeInTheDocument();
+  const buttonNpm= screen.getByText('npm');
+  expect(buttonNpm).toBeInTheDocument();
 });
