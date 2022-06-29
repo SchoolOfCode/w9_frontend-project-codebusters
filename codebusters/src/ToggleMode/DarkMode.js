@@ -1,16 +1,16 @@
 import "./DarkMode.css";
 
-
+/* setting dark theme and storing it */
 const setDark = () => {
   localStorage.setItem("theme", "dark");
   document.documentElement.setAttribute("data-theme", "dark");
 };
-
+/* setting light mode and storing it */
 const setLight = () => {
   localStorage.setItem("theme", "light");
   document.documentElement.setAttribute("data-theme", "light");
 };
-
+/* get stored theme */
 const storedTheme = localStorage.getItem("theme");
 
 const prefersDark =
@@ -19,7 +19,7 @@ const prefersDark =
 
 const defaultDark =
   storedTheme === "dark" || (storedTheme === null && prefersDark);
-
+ 
 if (defaultDark) {
   setDark();
 }
