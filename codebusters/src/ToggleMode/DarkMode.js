@@ -1,6 +1,5 @@
 import "./DarkMode.css";
 
-
 const setDark = () => {
   localStorage.setItem("theme", "dark");
   document.documentElement.setAttribute("data-theme", "dark");
