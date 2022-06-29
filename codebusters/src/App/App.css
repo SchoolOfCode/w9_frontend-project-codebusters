@@ -1,20 +1,37 @@
+
 html{
   overflow: scroll;
 }
 
+/* Error Oracle title 2 tone*/
+#mainTitle{
+  justify-content: center;
+  position: relative;left:344px;top:40px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif ;
+   font-size:55px;
+   letter-spacing: 10px;
+   color: rgb(0, 0, 0);
+   
+}
 
+#mainTitle::after{
+  content:"[Error Oracle]";
+  position: relative;right:609px;top:2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  font-size:55px;
+  letter-spacing: 10px;
+  color:#f24c3f;
+  
+}
+/* Error Oracle title 2 tone end */
 
-.dataText{
-  background-color: rgba(114, 110, 110, 0.4);
-  position:relative; left:110px;bottom:140px;
-  border-radius: 20px;
-  font-size: 2rem;
-  width: 1000px;
-    height:2000px;
-    border: none;
-    padding:50px;
-    margin: 20px;
-    margin-bottom: 130px;
+.wrapper { /*buttons wrapper*/
+  position: relative;bottom:140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .searchBox{
@@ -43,7 +60,32 @@ html{
 
 }
 
-.textArea{
+.dataText{ /* Text in the display section */
+  background-color: rgba(114, 110, 110, 0.4);
+  position:relative; left:110px;bottom:140px;
+  border-radius: 20px;
+  font-size: 2rem;
+  width: 1000px;
+    height:2000px;
+    border: none;
+    padding:50px;
+    margin: 20px;
+    margin-bottom: 130px;
+}
+
+.question{
+  font-size: 1.5rem;
+    
+  }
+  
+  .answer{
+    font-size: 1.2rem;
+    color:rgb(0, 0, 0);
+  }
+
+  /* Text in the display section end*/
+
+.textArea{ /*comment section*/
   position: relative;left:230px;bottom:400px;
   border-radius: 10px;
   font-size: 1rem;
@@ -53,94 +95,17 @@ html{
     border: 1px solid grey;
     outline: 0;
     cursor: text;
-
 }
 
 
-
-.question{
-font-size: 1.5rem;
-  
-}
-
-.answer{
-  font-size: 1.2rem;
-  color:rgb(0, 0, 0);
-}
-
-    
-
-
-#mainTitle{
-  
-  justify-content: center;
-  position: relative;left:344px;top:40px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif ;
-   font-size:55px;
-   letter-spacing: 10px;
-   color: rgb(0, 0, 0);
-   
-  
-}
-
-
-#mainTitle::after{
-  content:"[Error Oracle]";
-  position: relative;right:609px;top:2px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
-  font-size:55px;
-  letter-spacing: 10px;
-  color:#f24c3f;
-  
-}
-
-#spotify{
-  position:relative; left:440px;bottom: 685px;
-  
-  
-  
-}
-
-#useful{
+#useful{ /*useful links box*/
   position:relative; left:130px; bottom:1025px;
   background-color: rgba(114, 110, 110, 0.4);
   width: 250px;
   height:320px;
   padding:70px;
   border-radius: 20px;
-  
 }
-
-#creators{
-  position:relative; left:880px; bottom:350px;
-  background-color: rgba(114, 110, 110, 0.4);
-  width: 250px;
-  height:320px;
-  padding:70px;
-  border-radius: 20px;
-  font-size: 16px;
-
-}
-
-
-
-
-
-
-
-.wrapper {
-  position: relative;bottom:140px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-
-
-
 
 a:link {
   color: rgb(0, 0, 0);
@@ -159,4 +124,24 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+
+/*useful links box end*/
+
+#spotify{
+  position:relative; left:440px;bottom: 685px; 
+}
+
+#creators{ /*creators box*/
+  position:relative; left:880px; bottom:350px;
+  background-color: rgba(114, 110, 110, 0.4);
+  width: 250px;
+  height:320px;
+  padding:70px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+
+
+
 
