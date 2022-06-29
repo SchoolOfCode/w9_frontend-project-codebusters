@@ -20,9 +20,9 @@ function App() {
     setAllData(dataFetch.payload)
   }
 
-useEffect(() => {
+  useEffect(() => {
   getAllErrors();
-}, []);
+  }, []);
 
   async function fetchErrorByTopicType(topicType) {
     const response = await fetch(`http://localhost:3001/errors/${topicType}`);
